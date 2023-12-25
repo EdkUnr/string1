@@ -22,4 +22,12 @@ public class Book {
         return String.format("Book: %s, Author: %s %s, Year: %d",
                 title, author.getFirstName(), author.getLastName(), publicationYear);
     }
+    public String getTitle() {
+        return title;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
 }
