@@ -1,25 +1,28 @@
-public class Book {
+class Book {
     private String title;
     private Author author;
     private int publicationYear;
 
-    public Book(String title, Author author, int year) {
+    public Book(String title, Author author, int publicationYear) {
         this.title = title;
         this.author = author;
-        this.publicationYear = year;
+        this.publicationYear = publicationYear;
     }
 
-    public void setPublicationYear(int year) {
-        this.publicationYear = year;
+    public String getTitle() {
+        return title;
+    }
+
+    public Author getAuthor() {
+        return author;
     }
 
     public int getPublicationYear() {
         return publicationYear;
     }
 
-    @Override
-    public String toString() {
-        return String.format("Book: %s, Author: %s %s, Year: %d",
-                title, author.getFirstName(), author.getLastName(), publicationYear);
+    public void setPublicationYear(int publicationYear) {
+        this.publicationYear = publicationYear;
     }
 }
+
