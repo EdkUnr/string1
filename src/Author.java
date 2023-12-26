@@ -1,4 +1,4 @@
-public class Author {
+class Author {
     private String firstName;
     private String lastName;
 
