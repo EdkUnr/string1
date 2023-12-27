@@ -1,17 +1,23 @@
 public class LibraryApp {
     public static void main(String[] args) {
-        Author tolkien = new Author("J.R.R.", "Tolkien");
-        Author rowling = new Author("J.K.", "Rowling");
+        // Создание объектов авторов
+        Author author1 = new Author("Лев", "Толстой");
+        Author author2 = new Author("Федор", "Достоевский");
 
-        Book lotr = new Book("The Lord of the Rings", tolkien, 1954);
-        Book hp = new Book("Harry Potter", rowling, 1997);
+        // Создание объектов книг
+        Book book1 = new Book("Война и мир", author1, 1869);
+        Book book2 = new Book("Преступление и наказание", author2, 1866);
 
-        System.out.println(lotr);
-        System.out.println(hp);
+        // Вывод информации о книгах
+        System.out.println(book1);
+        System.out.println(book2);
 
-        hp.setPublicationYear(1998);
-        System.out.println("Updated year for Harry Potter: " + hp.getPublicationYear());
+        // Изменение года публикации книги
+        book1.setPublicationYear(1870);
+        System.out.println("Измененный год публикации книги 'Война и мир': " + book1.getPublicationYear());
     }
 }
+
+
 
 
